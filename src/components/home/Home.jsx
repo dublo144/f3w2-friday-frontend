@@ -118,7 +118,12 @@ const Home = () => {
           logged in as Admin. <b>Username:</b> admin, <b>Password:</b>{' '}
           adminqwerty
         </p>
-        <p>A few thing i want to point out:</p>
+        <p>
+          <b>NB</b> Signup functionality is not implemented on the frontend,
+          however the backend should be able to handle it..
+        </p>
+
+        <p>A few things i want to point out:</p>
 
         <Header>The context api (useAuth.jsx)</Header>
         <p>
@@ -149,7 +154,7 @@ const Home = () => {
             <List.Icon name='server' />
             <List.Content>
               <a
-                href='https://docs.google.com/document/d/1RnIgnyc_1eCS1PzqXtWstm2EPLV5coruQvR2FU07G-g/edit?usp=sharing'
+                href='https://github.com/dublo144/f3w2-friday-backend'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -161,7 +166,7 @@ const Home = () => {
             <List.Icon name='computer' />
             <List.Content>
               <a
-                href='https://github.com/dublo144/3sem-f3w2/tree/master/day3'
+                href='https://github.com/dublo144/f3w2-friday-frontend'
                 target='_blank'
                 rel='noopener noreferrer'
               >
