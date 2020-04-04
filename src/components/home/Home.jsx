@@ -125,27 +125,60 @@ const Home = () => {
 
         <p>A few things i want to point out:</p>
 
-        <Header>The context api (useAuth.jsx)</Header>
+        <Header>
+          The context api (
+          <a
+            href='https://github.com/dublo144/f3w2-friday-frontend/blob/master/src/hooks/useAuth.jsx'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            useAuth.jsx
+          </a>
+          )
+        </Header>
         <p>
           The entire app is wrapped in Authentication Context with a useAuth
           hook in order to tap in to the context. This ensures that
           authentication state is centralized, and isnt being passed around with
-          prop-drilling. Throughout my app, every component has access to the
-          current authentication state, they subscribe to changes in auth,
-          aswell as functions to change it.
+          prop-drilling and lifting state. Throughout my app, every component
+          has access to the current authentication state aswell as functions to
+          change it and they all subscribe to changes in auth, so triggering a
+          change in auth, will trigger a rerender of any mounted component..
         </p>
 
-        <Header>Protected Route (ProtectedRoute.jsx)</Header>
+        <Header>
+          Protected Route (
+          <a
+            href='https://github.com/dublo144/f3w2-friday-frontend/blob/master/src/components/routes/ProtectedRoute.jsx'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            ProtectedRoute.jsx
+          </a>
+          )
+        </Header>
         <p>
           A custom component which takes in the components children (not props),
           and ensures that the user is logged in in order to access the pages.
           This component also utilizes the auth context described above
         </p>
 
-        <Header>useFetch (useFetch.jsx)</Header>
+        <Header>
+          useFetch (
+          <a
+            href='https://github.com/dublo144/f3w2-friday-frontend/blob/master/src/hooks/useFetch.jsx'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            useFetch.jsx
+          </a>
+          )
+        </Header>
         <p>
           A classic custom hook used to async fetch from the backend, and return
-          a loading state, response or error..
+          a loading state, response or error.. This hook could have been
+          implemented more throughout the app though...Might come back later
+          on..
         </p>
 
         <Header>Source Code</Header>
