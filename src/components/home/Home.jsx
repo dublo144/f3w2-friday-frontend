@@ -7,7 +7,7 @@ const Home = () => {
       <Header as='h2' attached='top' textAlign='center'>
         Friday Assignment - Mads Brandt
       </Header>
-      <Segment attached raised style={{ height: '100vh' }}>
+      <Segment attached raised style={{ height: '110vh' }}>
         <p>
           So... This is the Friday Assignment which also works as the README for
           the rest of the week
